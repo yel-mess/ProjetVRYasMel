@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DetectBall : MonoBehaviour
 {
+    private int score = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,8 @@ public class DetectBall : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            Debug.Log("You have won !");
+            score += 1;
+            Debug.Log(score);
         }
     }
 }
