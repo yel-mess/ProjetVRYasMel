@@ -26,6 +26,7 @@ public class DetectBall : MonoBehaviour
         {
             score += 1;
             tmpText.text = "Score :\n" + score.ToString();
+            //Destroy(gameObject);
         }
     }
 }
